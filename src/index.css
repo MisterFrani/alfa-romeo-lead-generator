@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  background-image: url('./assets/images/bg_desktop.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  min-height: 100vh;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('./assets/images/bg_mobile.jpeg');
+    background-attachment: fixed; 
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
